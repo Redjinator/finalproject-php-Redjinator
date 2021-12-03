@@ -12,7 +12,9 @@ $page_title = 'Daycare logout page';
 include(TEMPLATE_PATH.'\header.php');
 
 // Print a confirmation message:
-echo '<p>You are now logged out.</p>';
+echo '<p>You are now logged out.</p><br>';
+echo '<a href="./index.php">Home</a><br>';
+
 
 // Include footer
 include(TEMPLATE_PATH.'\footer.php');?>
