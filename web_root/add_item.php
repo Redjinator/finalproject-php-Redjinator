@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
             // Show entry success/failure message
             print '<p>Your item has been stored.</p>';
         } else {
-            print '<p class="error">Could not store the quote because: <br>'.mysqli_error($dbc).'.</p><p>The query being run was: '.$query.'</p>';
+            print '<p class="error">Could not store the item because: <br>'.mysqli_error($dbc).'.</p><p>The query being run was: '.$query.'</p>';
         }
 
         // Close connection
