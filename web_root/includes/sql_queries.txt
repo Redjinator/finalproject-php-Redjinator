@@ -1,0 +1,32 @@
+// SQL used to create the food table
+CREATE TABLE food (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    food_item VARCHAR(255) NOT NULL,
+    food_type VARCHAR(7) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (food_type) REFERENCES type(type)
+    ) CHARACTER SET utf8
+
+// SQL used to create the schedule tables
+CREATE TABLE schedule (
+    day VARCHAR(12) NOT NULL UNIQUE,
+    breakfast_1 VARCHAR(255),
+    breakfast_2 VARCHAR(255),
+    breakfast_3 VARCHAR(255),
+    breakfast_4 VARCHAR(255),
+    snack_am_1 VARCHAR(255),
+    snack_am_2 VARCHAR(255),
+    snack_am_3 VARCHAR(255),
+    snack_am_4 VARCHAR(255),
+    lunch_1 VARCHAR(255),
+    lunch_2 VARCHAR(255),
+    lunch_3 VARCHAR(255),
+    lunch_4 VARCHAR(255),
+    snack_pm_1 VARCHAR(255),
+    snack_pm_2 VARCHAR(255),
+    snack_pm_3 VARCHAR(255),
+    snack_pm_4 VARCHAR(255),
+    PRIMARY KEY (day)
+    ) CHARACTER SET utf8
+
+// SQL used to create
