@@ -11,5 +11,9 @@
     $doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
     define("WWW_ROOT", $doc_root);
 
+    // This file 'initialize.php' will be included with most other php files
+    // so I'll call 'functions.php' here instead of in the other php files.
+    require_once('functions.php');
+
 
 ?>
