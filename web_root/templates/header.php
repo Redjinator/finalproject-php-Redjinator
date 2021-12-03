@@ -17,4 +17,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Daycare Project</h1>
+        <br>
+        <!-- BEGIN CHANGEABLE CONTENT -->
+
 

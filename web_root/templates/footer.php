@@ -1,11 +1,19 @@
-<!--
-    Student:        Reginald McPherson
-    Course:         DGL-123 PHP Fundamentals
-    Last Modified:  Dec 02, 2021
-    Filename:       header.php
-    Purpose:        Part of the course final project.
--->
+<?php
 
+// Display admin links if the user is admin & it's not logout.php page
+// or if the $loggedin variable is true (i.e., the user just logged in)
 
+if((is_admin() && (basename($_SERVER['PHP_SELF']) != 'logout.php')) OR (isset($loggedin) && $loggedin)) {
+    
+    // Create links
+    print '<hr><h3>Site Admin</h3><p><a href="add_quote.php">Add Quote</a> <->
+    <a href="view_quotes.php">View All Quotes</a> <->
+    <a href="logout.php">Logout</a></p>';
+}
+
+?>
+
+</div><!-- container -->
+<div id="footer">Content &copy; 2021</div>
 </body>
 </html>
