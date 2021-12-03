@@ -1,10 +1,18 @@
 <?php
 
+/*
+    Student:        Reginald McPherson
+    Course:         course
+    Last Modified:  date_modified
+    Filename:       filename
+    Purpose:        purpose or description
+*/
+
     // Constants for file paths, hopefully to avoid errors
     define("PRIVATE_PATH", dirname(__FILE__));
     define("PROJECT_PATH", dirname(PRIVATE_PATH));
     define("PUBLIC_PATH", PROJECT_PATH . '\public');
-    define("TEMPLATE_PATH", PRIVATE_PATH . '\templates');
+    define("TEMPLATE_PATH", PROJECT_PATH . '\templates');
 
     // root url to constant, checks that public is in the path
     $public_end = strpos($_SERVER['SCRIPT_NAME'], '\public') + 7;

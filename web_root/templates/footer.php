@@ -5,3 +5,7 @@
     Filename:       header.php
     Purpose:        Part of the course final project.
 -->
+
+
+</body>
+</html>
