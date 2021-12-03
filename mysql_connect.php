@@ -1,7 +1,11 @@
 <?php
 
 // Connect
-$db = mysqli_connect('localhost', 'root', '1We2Are3Great!', 'myquotes');
+$dbc = mysqli_connect('localhost', 'root', '', 'meals_and_snacks');
 
 // Set character set
-mysqli_set_charset($db, 'utf8');
+mysqli_set_charset($dbc, 'utf8');
+
+
+
+
