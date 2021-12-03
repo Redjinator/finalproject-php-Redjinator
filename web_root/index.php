@@ -6,6 +6,7 @@
 <ul style="margin-bottom: 1rem;">
     <li>Make a mock up front page</li>
     <li>Create a meal plane page</li>
+    <li>My db entries don't check for duplicates yet</li>
 </ul>
 
 <h2>File paths test</h2>
