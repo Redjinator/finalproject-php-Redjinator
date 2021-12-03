@@ -14,6 +14,8 @@ if((is_admin() && (basename($_SERVER['PHP_SELF']) != 'logout.php')) OR (isset($l
 ?>
 
 </div><!-- container -->
-<div id="footer">Content &copy; 2021</div>
+<div id="footer">
+    Content &copy; 2021
+</div>
 </body>
 </html>
