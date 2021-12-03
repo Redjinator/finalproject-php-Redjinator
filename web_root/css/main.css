@@ -1,8 +1,14 @@
-/*
-    Student:        Reginald McPherson
-    Course:         DGL-123 PHP Fundamentals
-    Last Modified:  02 Dec 2021
-    Filename:       main.css
-    Purpose:        Part of the course final project
-*/
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 /*# sourceMappingURL=main.css.map */
