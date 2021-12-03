@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
 
     if(!empty($_POST['food_item']) && !empty($_POST['food_type'])) {
 
-        // Need the database connection
+        // Database connection
         include('../mysql_connect.php');
 
         // Prep database entry

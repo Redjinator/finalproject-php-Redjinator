@@ -3,6 +3,8 @@
 <?php include(TEMPLATE_PATH.'\header.php');?>
 <?php
 
+print '<h2>Edit a Food Item</h2>';
+
 // Restrict access to admin only
 if(!is_admin()) {
     print '

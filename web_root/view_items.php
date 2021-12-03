@@ -32,9 +32,9 @@ if($result = mysqli_query($dbc, $query)) {
         print "<div><blockquote>{$row['food_item']}</blockquote>- {$row['food_type']}\n";
 
         // Add administrative links
-        print "<p><b>Quote Admin:</b> <a href=\"edit_quote.php?id={$row['id']}\">Edit</a>
+        print "<p><b>Admin:</b> <a href=\"edit_item.php?id={$row['id']}\">Edit</a>
         <->
-        <a href=\"delete_quote.php?id={$row['id']}\">Delete</a></p></div>\n";
+        <a href=\"delete_item.php?id={$row['id']}\">Delete</a></p></div>\n";
     } // End of while loop
 
 } else { // Query didn't run

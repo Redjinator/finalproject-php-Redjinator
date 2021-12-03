@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 // Set the page title and include the header file
-define('TITLE', 'Login');
+$page_title = 'Daycare - Login';
 include(TEMPLATE_PATH.'\header.php');
 
 // Print an error if exists
