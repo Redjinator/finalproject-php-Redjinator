@@ -30,3 +30,11 @@ function url_for($script_path) {
     }
     return WWW_ROOT . $script_path;
 }
+
+
+// creates a meal
+function create_meal($weekday, $mealtime){
+    $day = $weekday;
+    $meal = $mealtime;
+    return include('./meal.php');
+}
