@@ -12,6 +12,7 @@
     define("PRIVATE_PATH", dirname(__FILE__));
     define("PROJECT_PATH", dirname(PRIVATE_PATH));
     define("TEMPLATE_PATH", PROJECT_PATH . '\templates');
+    define("STYLESHEET_PATH", PROJECT_PATH . '\css');
 
     // root url to constant, checks that public is in the path
     $public_end = strpos($_SERVER['SCRIPT_NAME'], '\public') + 7;
