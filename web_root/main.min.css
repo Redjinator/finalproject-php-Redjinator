@@ -1,2 +1,2 @@
-:root{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;margin:0rem;padding:0rem;text-decoration:none}.error{color:red}.success{color:green}table{width:100%}table th{background:teal;color:#fff}ul{list-style-type:none}
+:root{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit;text-decoration:none}.main{background:blue}.main .main__paragraph{background:#ff0}.main .main__paragraph .main .main__paragraph__paragraph:hover{color:red}.error{color:red}.success{color:green}table{width:100%}table th{background:teal;color:#fff}ul{list-style-type:none}
 /*# sourceMappingURL=main.min.css.map */

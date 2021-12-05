@@ -8,9 +8,17 @@
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  margin: 0rem;
-  padding: 0rem;
   text-decoration: none;
+}
+
+.main {
+  background: blue;
+}
+.main .main__paragraph {
+  background: yellow;
+}
+.main .main__paragraph .main .main__paragraph__paragraph:hover {
+  color: red;
 }
 
 .error {

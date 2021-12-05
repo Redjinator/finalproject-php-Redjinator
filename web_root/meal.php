@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 ?>
             </li>
         </ul>
-        <button class="btn btn-secondary" type="submit">Enter</button>
+        <button class="btn " type="submit">Enter</button>
     </form>
 </td>
 <!-- ===================================================================== -->

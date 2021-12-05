@@ -1,6 +1,19 @@
 @use './partials/resets';
 @use './partials/variables';
 
+
+
+.main {
+    background: blue;
+
+    #{&}__paragraph {
+        background: yellow;
+        #{&}__paragraph:hover {
+            color: red;
+        }
+    }
+}
+
 .error {
     color: red;
 }
@@ -21,5 +34,6 @@ table{
 ul {
     list-style-type: none;
 }
+
 
 
