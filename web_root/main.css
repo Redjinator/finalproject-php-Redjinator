@@ -20,4 +20,16 @@
 .success {
   color: green;
 }
+
+table {
+  width: 100%;
+}
+table th {
+  background: teal;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
 /*# sourceMappingURL=main.css.map */
