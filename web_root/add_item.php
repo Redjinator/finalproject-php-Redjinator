@@ -5,8 +5,7 @@
 
 print '<h2>Add a Food Item</h2>';
 
-// Restrict access to admin only
-
+// Restrict access to admin onlys
 if(!is_admin()) {
     print '
         <h2>Access Denied!</h2>
@@ -18,6 +17,7 @@ if(!is_admin()) {
 // Check for a form submission
 if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
 
+    // Ensure food_item & food_type are not empty
     if(!empty($_POST['food_item']) && !empty($_POST['food_type'])) {
 
         // Database connection
@@ -41,6 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
 
         // Close connection
         mysqli_close($dbc);
+
     } else { // Failed to enter an item
         print '<p class="error">Please enter an item</p>';
     }
@@ -55,12 +56,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
 
     <p><label>Food item: <input type="text" name="food_item"></label></p>
 
-    <?php // Food catagory selection ?>
+    
+    <?php // Food catagory selectidon ?>
 
     <?php include(TEMPLATE_PATH.'\type_select.php');?>
 
     <p><input class="btn btn-primary mt-2" type="submit" name="submit" value="Add Food"></p>
 
 </form>
+
+
 
 <?php include(TEMPLATE_PATH.'\footer.php');?>
