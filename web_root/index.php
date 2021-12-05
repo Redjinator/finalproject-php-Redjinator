@@ -1,8 +1,8 @@
 <?php require_once('./includes/initialize.php');?>
-<?php $page_title = 'Daycare - Home';?>
+<?php $page_title = 'Index';?>
 <?php include(TEMPLATE_PATH.'\header.php');?>
 
-<h2>To-do list</h2>
+<h2>To-do list 3</h2>
 <ul style="margin-bottom: 1rem;">
     <li>Make a mock up front page</li>
     <li>Create a meal plane page</li>
@@ -11,29 +11,47 @@
     <li>Add to schedule page, uses drop downs based on user selection to enter items onto the meal plan slots</li>
     <li>Use combo of bootstrap and sass for document style</li>
 </ul>
-
-<h2>File paths test</h2>
-<div style="margin-bottom: 1rem;">
-    <?php
-    echo PRIVATE_PATH.'<br>';
-    echo PROJECT_PATH.'<br>';
-    echo TEMPLATE_PATH.'<br>';
-    ?>
-</div>
-
+_
 <h2>Connection Test</h2>
+
 <div style="margin-bottom: 1rem;">
     <?php include('../mysql_connect.php');?>
-    <?php $dbc ? print '<p style="color: green;">Connected</p>' : print '<p style="color: red">Disconnected</p>';?>
+    <?php $dbc ? print '<p class="success">Connected</p>' : print '<p class="error">Disconnected</p>';?>
 </div>
 
 
+<!-- Temp Links -->
+<a href="login.php">Login</a>
+
+
+<?php
+include('../mysql_connect.php');
+
+
+// Define query
+$query = 'SELECT id, food_item, food_type FROM food ORDER BY food_type DESC';
+if(isset($_GET['food_type'])){
+    $query = 'SELECT id, food_item, food_type FROM food ORDER BY food_type DESC';
+}
+
+// Run query
+if ($result = mysqli_query($dbc, $query)) {
+
+    // Retrieve record
+    $row = mysqli_fetch_array($result);
+
+    // Print the record
+    print "<div><blockquote>{$row['food_item']}</blockquote>-{$row['food_type']}</div>";
+    
+}
+
+//
 
 
 
 
 
-<?php include(TEMPLATE_PATH.'\footer.php');?>
+include(TEMPLATE_PATH.'\footer.php');
 
 
 
