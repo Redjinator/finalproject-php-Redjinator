@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 // Set the page title and include the header file
-$page_title = 'Daycare - Login';
+$page_title = 'Login';
 include(TEMPLATE_PATH.'\header.php');
 
 // Print an error if exists
@@ -50,11 +50,11 @@ if($loggedin) {
     print '<p>You are now logged in!</p>';
 } else {
     print '<h2>Login Form</h2>
-    <form action="login.php" method="post">
-    <p><label>Email Address <input type="email" name="email"></label></p>
-    <p><label>Password<input type="password" name="password"></label></p>
-    <p><input type="submit" name="submit" value="Log In!"></p>
-    </form>';
+        <form action="login.php" method="post">
+            <p><label>Email Address <input type="email" name="email"></label></p>
+            <p><label>Password<input type="password" name="password"></label></p>
+            <p><input type="submit" name="submit" value="Log In!"></p>
+        </form>';
 }
 
 include(TEMPLATE_PATH.'\footer.php');

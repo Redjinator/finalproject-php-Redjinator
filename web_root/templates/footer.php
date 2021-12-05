@@ -8,6 +8,7 @@ if((is_admin() && (basename($_SERVER['PHP_SELF']) != 'logout.php')) OR (isset($l
     // Create links
     print '<hr><h3>Admin commands</h3><p><a href="add_item.php">Add Food</a> <->
     <a href="view_items.php">View Items</a> <->
+    <a href="meal_plan.php">Meal Plan</a> <->
     <a href="logout.php">Logout</a></p>';
 }
 
