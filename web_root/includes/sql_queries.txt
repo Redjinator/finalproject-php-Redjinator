@@ -9,6 +9,7 @@ CREATE TABLE food (
 
 // SQL used to create the schedule tables
 CREATE TABLE schedule (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     day VARCHAR(12) NOT NULL UNIQUE,
     breakfast_1 VARCHAR(255),
     breakfast_2 VARCHAR(255),
@@ -30,3 +31,16 @@ CREATE TABLE schedule (
     ) CHARACTER SET utf8
 
 // SQL used to create
+UPDATE `meals_and_snacks`.`schedule` SET `day` = 'Monday' WHERE (`day` = '');
+UPDATE `meals_and_snacks`.`schedule` SET `day` = 'Tuesday' WHERE (`day` = 'Monday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Wednesday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Thursday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Friday');
+
+UPDATE `meals_and_snacks`.`schedule` SET `day` = 'Monday' WHERE (`day` = '');
+UPDATE `meals_and_snacks`.`schedule` SET `day` = 'Tuesday' WHERE (`day` = 'Monday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Wednesday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Thursday');
+INSERT INTO `meals_and_snacks`.`schedule` (`day`) VALUES ('Friday');
+
+$query = "UPDATE `meals_and_snacks`.`schedule` SET `breakfast_1` = '$breakfast_1' WHERE (`day` = 'Monday')";

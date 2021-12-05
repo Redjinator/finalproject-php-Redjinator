@@ -1,19 +1,15 @@
-<?php 
-include('../mysql_connect.php');
-$query = 'SELECT * FROM food';
-$result1 = mysqli_query($dbc, $query);
+<?php
 
-/* Eventually I'll add the day to the call */
+include('../mysql_connect.php');
+
+$query = 'SELECT * FROM food';
+
+$result = mysqli_query($dbc, $query);
 
 ?>
 
-
-<select class="dropdown" name='item'>
-    <?php while($row1 = mysqli_fetch_array($result1)):; ?>
-    <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
+<select id="<?php echo $column_name ?>" name="<?php echo $column_name ?>">
+    <?php while($row=mysqli_fetch_array($result)): ?>
+        <option value="<?php echo $row[1]; ?>"><?php echo $row[1];?></option>
     <?php endwhile;?>
 </select>
-
-
-
-

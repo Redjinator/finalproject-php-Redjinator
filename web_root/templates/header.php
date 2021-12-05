@@ -22,9 +22,7 @@
      -->
 </head>
 <body>
-    <div class="container">
-        <h1>Daycare Project</h1>
-        <br>
+    <div class="grid">
         <!-- BEGIN CHANGEABLE CONTENT -->
 
 

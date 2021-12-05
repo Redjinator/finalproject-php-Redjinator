@@ -6,7 +6,6 @@
 print '<h2>View Food Items</h2>';
 
 // Restrict access to admin only
-/*
 if(!is_admin()) {
     print '
         <h2>Access Denied!</h2>
@@ -14,7 +13,7 @@ if(!is_admin()) {
     include(TEMPLATE_PATH.'\footer.php');
     exit();
 }
-*/
+
 
 // Connect to database
 include('../mysql_connect.php');
@@ -29,7 +28,7 @@ if($result = mysqli_query($dbc, $query)) {
     while ($row = mysqli_fetch_array($result)) {
 
         // Print the record:
-        print "<div><blockquote>{$row['food_item']}</blockquote>- {$row['food_type']}\n";
+        print "<div>{$row['food_item']} - {$row['food_type']}\n";
 
         // Add administrative links
         print "<p><b>Admin:</b> <a href=\"edit_item.php?id={$row['id']}\">Edit</a>

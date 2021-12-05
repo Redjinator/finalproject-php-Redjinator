@@ -54,12 +54,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle form
 
 <form action="add_item.php" method="post">
 
-    <p><label>Food item: <input type="text" name="food_item"></label></p>
+    <p><label>
+        Food item: <input type="text" name="food_item">
+    </label></p>
 
-    
-    <?php // Food catagory selectidon ?>
-
-    <?php include(TEMPLATE_PATH.'\type_select.php');?>
+    <?php
+    // Food catagory selectidon
+    include(TEMPLATE_PATH.'\type_select.php');
+    ?>
 
     <p><input class="btn btn-primary mt-2" type="submit" name="submit" value="Add Food"></p>
 

@@ -21,20 +21,13 @@ function is_admin($name = 'Rocketship', $value = 'Laundromat') {
 } // End
 
 
+// Prepare data for entry into DB
+function prepare_data($conn, $sub_item){
+    return mysqli_real_escape_string($conn, trim(strip_tags($_POST[$sub_item])));
+}
 
-// add the leading '/' to path if not present
-function url_for($script_path) {
-
-    if($script_path[0] != '/') {
-        $script_path = "/" . $script_path;
-    }
-    return WWW_ROOT . $script_path;
+function update_row($day, $column, $prepared_data){
+    return "UPDATE `meals_and_snacks`.`schedule` SET `$column` = '$prepared_data' WHERE (`day` = '$day')";
 }
 
 
-// creates a meal
-function create_meal($weekday, $mealtime){
-    $day = $weekday;
-    $meal = $mealtime;
-    return include('./meal.php');
-}

@@ -4,8 +4,11 @@
 
  <?php include('../mysql_connect.php');?>
 
-
-
+ <?php
+function add_meal($day, $meal, $meal1, $meal2, $meal3, $meal4){
+    include('./meal.php');
+}
+?>
 <div class="schedule">
     <table class="table table-bordered">
         <tr>
@@ -16,32 +19,34 @@
             <th>Friday</th>
         </tr>
         <tr>
-            <?php create_meal('Monday', 'Breakfast'); ?>
-            <?php create_meal('Tuesday', 'Breakfast'); ?>
-            <?php create_meal('Wednesday', 'Breakfast'); ?>
-            <?php create_meal('Thursday', 'Breakfast'); ?>
-            <?php create_meal('Friday', 'Breakfast'); ?>
+            <?php add_meal('Monday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
+            <?php add_meal('Tuesday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
+            <?php add_meal('Wednesday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
+            <?php add_meal('Thursday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
+            <?php add_meal('Friday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
         </tr>
         <tr>
-            <?php create_meal('Monday', 'Morning Snack'); ?>
-            <?php create_meal('Tuesday', 'Morning Snack'); ?>
-            <?php create_meal('Wednesday', 'Morning Snack'); ?>
-            <?php create_meal('Thursday', 'Morning Snack'); ?>
-            <?php create_meal('Friday', 'Morning Snack'); ?>
+            <?php add_meal('Monday', 'snack_am', 'snack_am_1', 'snack_am_2', 'snack_am_3', 'snack_am_4'); ?>
+            <?php add_meal('Tuesday', 'snack_am', 'snack_am_1', 'snack_am_2', 'snack_am_3', 'snack_am_4'); ?>
+            <?php add_meal('Wednesday', 'snack_am', 'snack_am_1', 'snack_am_2', 'snack_am_3', 'snack_am_4'); ?>
+            <?php add_meal('Thursday', 'snack_am', 'snack_am_1', 'snack_am_2', 'snack_am_3', 'snack_am_4'); ?>
+            <?php add_meal('Friday', 'snack_am', 'snack_am_1', 'snack_am_2', 'snack_am_3', 'snack_am_4'); ?>
         </tr>
         <tr>
-            <?php create_meal('Monday', 'Lunch'); ?>
-            <?php create_meal('Tuesday', 'Lunch'); ?>
-            <?php create_meal('Wednesday', 'Lunch'); ?>
-            <?php create_meal('Thursday', 'Lunch'); ?>
-            <?php create_meal('Friday', 'Lunch'); ?>
+            <?php add_meal('Monday', 'lunch', 'lunch_1', 'lunch_2', 'lunch_3', 'lunch_4'); ?>
+            <?php add_meal('Tuesday', 'lunch', 'lunch_1', 'lunch_2', 'lunch_3', 'lunch_4'); ?>
+            <?php add_meal('Wednesday', 'lunch', 'lunch_1', 'lunch_2', 'lunch_3', 'lunch_4'); ?>
+            <?php add_meal('Thursday', 'lunch', 'lunch_1', 'lunch_2', 'lunch_3', 'lunch_4'); ?>
+            <?php add_meal('Friday', 'lunch', 'lunch_1', 'lunch_2', 'lunch_3', 'lunch_4'); ?>
         </tr>
         <tr>
-            <?php create_meal('Monday', 'Afternoon Snack'); ?>
-            <?php create_meal('Tuesday', 'Afternoon Snack'); ?>
-            <?php create_meal('Wednesday', 'Afternoon Snack'); ?>
-            <?php create_meal('Thursday', 'Afternoon Snack'); ?>
-            <?php create_meal('Friday', 'Afternoon Snack'); ?>
+            <?php add_meal('Monday', 'snack_pm', 'snack_pm_1', 'snack_pm_2', 'snack_pm_3', 'snack_pm_4'); ?>
+            <?php add_meal('Tuesday', 'snack_pm', 'snack_pm_1', 'snack_pm_2', 'snack_pm_3', 'snack_pm_4'); ?>
+            <?php add_meal('Wednesday', 'snack_pm', 'snack_pm_1', 'snack_pm_2', 'snack_pm_3', 'snack_pm_4'); ?>
+            <?php add_meal('Thursday', 'snack_pm', 'snack_pm_1', 'snack_pm_2', 'snack_pm_3', 'snack_pm_4'); ?>
+            <?php add_meal('Friday', 'snack_pm', 'snack_pm_1', 'snack_pm_2', 'snack_pm_3', 'snack_pm_4'); ?>
         </tr>
     </table>
 </div>
+
+<?php include(TEMPLATE_PATH.'/footer.php');?>

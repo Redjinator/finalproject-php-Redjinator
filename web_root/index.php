@@ -23,6 +23,29 @@ _
 <!-- Temp Links -->
 <a href="login.php">Login</a>
 
+      <button class="btn btn-primary mt-4 mb-2" type="button" data-toggle="modal" data-target="#servicesmodal">More Info</button>
+
+      <div class="modal fade" id="servicesmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title>">Pest Control</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+                <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites..</p>
+            </div><!--modal-body-->
+
+            <div class="modal-footer">
+              <button type="button" class="btn
+              btn-secondary" data-dismiss="modal">Back</button>
+            </div>
+
+          </div><!--modal-content-->
+        </div><!--modal-dialog-->
+      </div> <!--modal fade-->
 
 <?php
 include('../mysql_connect.php');
