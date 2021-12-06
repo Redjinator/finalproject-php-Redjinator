@@ -17,12 +17,34 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <!-- 
-        CSS Not working right because it's based on the css file location of the page being loaded i think?
-     -->
+
 </head>
 <body>
-    <div class="main">
-        <!-- BEGIN CHANGEABLE CONTENT -->
+<header>
+
+    <!-- Nav menu -->
+    <nav class="nav">
+        <ul class="menu-nav">
+
+            <li class="menu-nav__item">
+                <a href="index.php"     class="menu-nav__link">Home</a>
+            </li>
+
+            <li class="menu-nav__item">
+                <a href="add_item.php"  class="menu-nav__link">Add Item</a>
+            </li>
+
+            <li class="menu-nav__item">
+                <a href="meal_plan.php" class="menu-nav__link">Meal Plan</a>
+            </li>
+
+            <li class="menu-nav__item">
+                <a href="logout.php"    class="menu-nav__link">Logout</a>
+            </li>
+
+        </ul>
+    </nav> <!-- End nav -->
+</header> <!-- End header -->
+<!-- BEGIN CHANGEABLE CONTENT -->
 
 
