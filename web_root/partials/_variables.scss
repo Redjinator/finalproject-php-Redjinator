@@ -10,9 +10,19 @@
     padding: 0;
 }
 
-$primary-color: #252525;
-$secondary-color: #0084ff;
-$text-color: #fff;
+
+
+$bg-nav-primary: #b9761d;
+$bg-nav-secondary: darken($bg-nav-primary, 20%);
+$text-nav-primary: #ececec;
+$text-nav-secondary: #033;
+
+$bg-primary: #b9761d;
+$bg-secondary: #0084ff;
+$text-primary: #cc0707;
+$text-secondary: #ececec;
+
+$transition-speed: 600ms;
 
 $font-weights: (
     "regular": 400,

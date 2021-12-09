@@ -30,4 +30,22 @@ function update_row($day, $column, $prepared_data){
     return "UPDATE `meals_and_snacks`.`schedule` SET `$column` = '$prepared_data' WHERE (`day` = '$day')";
 }
 
+function get_meal($from_day, $from_meal) {
+
+    $column1 = $from_meal.'_1';
+    $column2 = $from_meal.'_2';
+    $column3 = $from_meal.'_3';
+    $column4 = $from_meal.'_4';
+
+    include('../mysql_connect.php');
+
+    $query = "SELECT `$column1`, `$column2`, `$column3`, `$column4`   FROM `schedule` WHERE (`day` = '$from_day')";
+
+    $result = mysqli_query($dbc, $query);
+
+    return mysqli_fetch_array($result);
+
+    mysqli_close($dbc);
+}
+
 

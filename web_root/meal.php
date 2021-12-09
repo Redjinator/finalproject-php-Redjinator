@@ -1,6 +1,10 @@
+<!DOCTYPE html>
 <?php require_once('./includes/initialize.php');?>
 <?php $page_title = 'Add Meal';?>
 <?php
+
+/* Templalte for a single meal, consisting of 4 food items and a button */
+
 
 // Restrict access to admin only
 if(!is_admin()) {
@@ -73,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 ?>
             </li>
         </ul>
-        <button class="btn " type="submit">Enter</button>
+        <button class="btn btn-success" type="submit">Enter</button>
     </form>
 </td>
 <!-- ===================================================================== -->
