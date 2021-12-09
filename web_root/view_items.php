@@ -31,8 +31,8 @@ if($result = mysqli_query($dbc, $query)) {
         print "<div>{$row['food_item']} - {$row['food_type']}\n";
 
         // Add administrative links
-        print "<p><b>Admin:</b> <a href=\"edit_item.php?id={$row['id']}\">Edit</a>
-        <->
+        print "<p><a href=\"edit_item.php?id={$row['id']}\">Edit</a>
+        |
         <a href=\"delete_item.php?id={$row['id']}\">Delete</a></p></div>\n";
     } // End of while loop
 

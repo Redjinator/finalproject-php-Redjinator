@@ -1,5 +1,6 @@
 @use './variables';
 
+
 @mixin flex-center($direction) {
     display: flex;
     justify-content: center;
