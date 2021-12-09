@@ -1,76 +1,7 @@
 @use './partials/resets';
 @use './partials/mixins';
 @use './partials/variables';
-@use './partials/home';
-
-
-
-
-@function weight($weight-name) {
-    @return map-get(variables.$font-weights, $weight-name);
-}
-
-@mixin mobile {
-    @media (max-width: variables.$mobile) {
-        @content;
-    }
-}
-
-body {
-    background: variables.$primary-color;
-    color: variables.$text-color;
-    height: 100vh;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1;
-}
-
-h1, h2, h3 {
-    font-weight: 400;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    padding: 1rem;
-}
-
-
-.main {
-    height: 100%;
-    width: 100%;
-
-    .social-icons {
-        position: fixed;
-        bottom: 1rem;
-        left: 1rem;
-
-        a {
-            padding: 0.4rem;
-            @include mixins.transition-ease;
-
-            &:hover {
-                color: variables.$secondary-color;
-            }
-        }
-    }
-}
-
-footer {
-    font-size: 1rem;
-    position: fixed;
-    bottom:0.4rem;
-    right:1rem;
-    text-align: right;
-    padding: 1rem;
-    color:#fff;
-}
-
+@use './partials/menu';
 
 
 .error {
@@ -93,6 +24,3 @@ table{
 ul {
     list-style-type: none;
 }
-
-
-
