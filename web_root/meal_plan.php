@@ -19,6 +19,7 @@ function add_meal($day, $meal, $meal1, $meal2, $meal3, $meal4){
             <th>Friday</th>
         </tr>
         <tr>
+            
             <?php add_meal('Monday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
             <?php add_meal('Tuesday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>
             <?php add_meal('Wednesday', 'breakfast', 'breakfast_1', 'breakfast_2', 'breakfast_3', 'breakfast_4'); ?>

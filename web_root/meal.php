@@ -20,9 +20,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Check meal items are not empty
     if(!empty($_POST['day']) && !empty($_POST[$meal.'_1']) && !empty($_POST[$meal.'_2']) && !empty($_POST[$meal.'_3']) && !empty($_POST[$meal.'_4'])) {
 
-/*         if(isset($_POST[$meal.'_1'])) {
+        if(isset($_POST[$meal.'_1'])) {
             $meal_1 = $_POST[$meal.'_1'];
-        } */
+        }
 
         // Database connection
         include('../mysql_connect.php');

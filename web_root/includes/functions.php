@@ -43,12 +43,13 @@ function get_meal($from_day, $from_meal) {
     include('../mysql_connect.php');
 
     $query = "SELECT `$column1`, `$column2`, `$column3`, `$column4`   FROM `schedule` WHERE (`day` = '$from_day')";
-
+    //$query = "SELECT `$column1`  FROM `schedule` WHERE (`day` = '$from_day')";
     $result = mysqli_query($dbc, $query);
 
+    
     return mysqli_fetch_array($result);
 
-    mysqli_close($dbc);
+    
 }
 
 
