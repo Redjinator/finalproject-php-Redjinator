@@ -10,7 +10,7 @@ function add_meal($day, $meal, $meal1, $meal2, $meal3, $meal4){
 }
 ?>
 <div class="schedule">
-    <table class="table table-bordered">
+    <table class="table table-sm">
         <tr>
             <th>Monday</th>
             <th>Tuesday</th>

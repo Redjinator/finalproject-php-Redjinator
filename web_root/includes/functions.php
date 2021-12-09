@@ -30,6 +30,9 @@ function update_row($day, $column, $prepared_data){
     return "UPDATE `meals_and_snacks`.`schedule` SET `$column` = '$prepared_data' WHERE (`day` = '$day')";
 }
 
+
+
+// Grabs all 4 items from a particular day and meal
 function get_meal($from_day, $from_meal) {
 
     $column1 = $from_meal.'_1';
